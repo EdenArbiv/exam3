@@ -1,0 +1,34 @@
+-- create database server_company;
+
+-- use server_company;
+-- create table companies(
+-- id int auto_increment,
+-- name varchar(30),
+-- primary key(id)
+-- );
+
+-- create table servers(
+-- id int auto_increment,
+-- name varchar(30),
+-- IP varchar(30),
+-- date datetime default now(),
+-- status boolean,
+-- company_id int,
+-- primary key(id),
+-- foreign key(company_id) references companies(id)
+-- );
+
+-- insert into companies(name)
+-- values("Microsoft"),
+-- ("IBM"),
+-- ("GoDaddy"),
+-- ("DigitalO");
+
+-- insert into servers(name , IP , status, company_id)
+-- values("project.A", "111.222.223.224", false, 1),
+-- ("project.B", "111.222.223.114", true, 2),
+-- ("project.C", "12.96.58.18", false, 3),
+-- ("project.D", "230.14.16.99", false, 4),
+-- ("project.E", "55.36.1.90", true, 3),
+-- ("project.F", "239.22.17.80", false, 1),
+-- ("project.J", "60.10.5.112", false, 2)
